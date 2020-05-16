@@ -1,8 +1,7 @@
 .vscode
-/config/secret.js
-/certs
 
 .DS_store
+.build
 
 # Logs
 logs
