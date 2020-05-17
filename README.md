@@ -42,6 +42,8 @@ Run in production mode
 npm start
 ```
 
+Scripts behind the scene run `build` and produce code to `./build` folder.
+
 ## Logging 
 
 The Boilerplate leverage `winston` to provide logging capabilities. 
