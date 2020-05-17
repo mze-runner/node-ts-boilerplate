@@ -1,6 +1,7 @@
 import express from 'express';
 import * as bodyParser from 'body-parser';
-import router from './controllers/index';
+import router from './controllers';
+import { PORT, ENVIRONMENT } from './config';
 
 class App {
     constructor () {
@@ -12,7 +13,8 @@ class App {
     public app: express.Application;
 
     private config (): void {
-        this.app.set('port', process.env.PORT || 4000);
+        this.app.set('port', PORT);
+        this.app.set('env', ENVIRONMENT);
         this.app.use(bodyParser.json());
         this.app.use(bodyParser.urlencoded({ extended: false }));
     }

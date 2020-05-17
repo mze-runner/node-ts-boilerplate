@@ -2,9 +2,15 @@
 
 The boilerplate to rapidly create node js service based on TypeScript.
 
-The boilerplate has bare minium dependencies and development  dependencies all what is needed for initial configuration.
+The boilerplate has bare minium dependencies but equipped with all you needed for initial configuration, e.g. ready-to-use run scripts, logging, setup to cope with environment variables.
 
-### Initial setup 
+## Context
+
+- [Initial setup](#inital-setup)
+- [Logging](#logging)
+- [Environment variables](#environment-variables)
+
+## Initial setup 
 
 ### Clone repository 
 
@@ -35,6 +41,25 @@ Run in production mode
 ```
 npm start
 ```
+
+## Logging 
+
+The Boilerplate leverage `winston` to provide logging capabilities. 
+Logs are being written to consol and `logs/app.log` file.
+
+Additionally, default output string format is customized per below 
+
+```
+2020-05-17T08:27:03.340Z [info]: Express server listening on port 7000, environment: development
+```
+
+## Environment variables 
+
+Following [The twelve-factor app](https://12factor.net/) environment variables, e.g. port, hosts, logins, password, etc. MUST not be stored as a constants in code.
+
+The boilerplate utilize `dotenv` module and consume environment variable from `.env` file.
+
+Feel free to update it whatever you need.
 
 ## ESLint
 
