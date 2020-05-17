@@ -78,31 +78,3 @@ npx eslint ./src/*.ts --fix
 In case you want to make couple of tweaks, go and change `.eslintrc.json` file and run `npx eslint ./src/*.ts --fix `.
 
 In case your fine with pre-defined rules, then you need to do nothing.
-
-## Dependencies
-
-By default boilerplate has the following dependencies
-
-```javascript
-express
-body-parser
-mongoose
-```
-
-***Dev dependencies***
-
-```javascript
-@types/express
-@types/mongoose
-@typescript-eslint/eslint-plugin
-@typescript-eslint/parser
-concurrently
-eslint
-eslint-config-standard
-eslint-plugin-import
-eslint-plugin-node
-eslint-plugin-promise
-eslint-plugin-standard
-ts-node
-typescript
-```
