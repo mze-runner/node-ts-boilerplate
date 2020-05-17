@@ -50,7 +50,7 @@ npx eslint ./src/*.ts --fix
 ```
 `eslint ./src/*.ts --fix` applies your changes to entire project housed under ./src folder. 
 
-In case you want to make couple of tweaks, go and change `.eslintrc.json` files and run `npx eslint ./src/*.ts --fix `.
+In case you want to make couple of tweaks, go and change `.eslintrc.json` file and run `npx eslint ./src/*.ts --fix `.
 
 In case your fine with pre-defined rules, then you need to do nothing.
 
