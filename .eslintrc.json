@@ -3,9 +3,7 @@
         "es6": true,
         "node": true
     },
-    "extends": [
-        "standard"
-    ],
+    "extends": ["standard"],
     "globals": {
         "Atomics": "readonly",
         "SharedArrayBuffer": "readonly"
@@ -15,20 +13,37 @@
         "ecmaVersion": 11,
         "sourceType": "module"
     },
-    "plugins": [
-        "@typescript-eslint"
-    ],
+    "plugins": ["@typescript-eslint"],
     "rules": {
         "semi": ["error", "always"],
-        "quotes": ["error", "single", { "allowTemplateLiterals": true } ],
-        "indent": ["error", 4],
+        "quotes": ["error", "single", { "allowTemplateLiterals": true }],
+        "indent": ["warn", 4],
         "@typescript-eslint/explicit-function-return-type": "off",
         "@typescript-eslint/no-explicit-any": 1,
         "@typescript-eslint/no-inferrable-types": [
-          "warn", {
-            "ignoreParameters": true
-          }
+            "warn",
+            {
+                "ignoreParameters": true
+            }
         ],
-        "@typescript-eslint/no-unused-vars": "warn"
+        "@typescript-eslint/no-unused-vars": "warn",
+        "space-before-function-paren": [
+            "warn",
+            {
+                "anonymous": "always",
+                "named": "never",
+                "asyncArrow": "ignore"
+            }
+        ],
+        "comma-dangle": [
+            "warn",
+            {
+                "arrays": "never",
+                "objects": "ignore",
+                "imports": "ignore",
+                "exports": "ignore",
+                "functions": "never"
+            }
+        ]
     }
 }
