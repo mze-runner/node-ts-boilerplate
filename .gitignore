@@ -67,6 +67,7 @@ typings/
 # DO NOT COMMIT your .env files to git 
 # dotenv environment variables file
 .env
+.env.*
 
 # next.js build output
 .next
