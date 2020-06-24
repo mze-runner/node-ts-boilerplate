@@ -1,6 +1,10 @@
+# VS code workspace 
 .vscode
 
+# MacOS service folder
 .DS_store
+
+# TS build 
 build
 
 # Logs
@@ -59,6 +63,8 @@ typings/
 # Yarn Integrity file
 .yarn-integrity
 
+# This must be uncommenced in real life project 
+# DO NOT COMMIT your .env files to git 
 # dotenv environment variables file
 .env
 
