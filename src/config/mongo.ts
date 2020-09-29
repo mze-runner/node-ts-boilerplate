@@ -13,8 +13,10 @@ export const connect = (url: string) => {
             logger.info(
                 `Connection to mongo ${mongo.connection.host}:${mongo.connection.port}/${mongo.connection.name} successful...`
             );
+            return mongo;
         })
         .catch((err) => {
             logger.error(`connection to mongo unsuccessful. ${err}...`);
+            throw err;
         });
 };
